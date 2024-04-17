@@ -1,26 +1,21 @@
-import PersonalInfo from '../Componentes/PersonalInfo';
-import Skills from '../Componentes/Skills';
-import ContactForm from '../Componentes/ContactForm'
+import Index1 from "../Componentes/Home2/index1.jsx"
+import Index2 from "../Componentes/Home2/index2.jsx"
 
 function Home() {
-  const skillList = [
-    { name: 'HTML', level: 'Avançado' },
-    { name: 'CSS', level: 'Intermediário' },
-    { name: 'JavaScript', level: 'Básico' }
-  ]
-
   return (
-    <div className="mainInfo">
-      <section id='info'>
-          <PersonalInfo 
-            name="João" 
-            email="joao@example.com" 
-            phone="(00) 12345-6789" 
-          />
-          <Skills skills={skillList} />
-        </section>
-        <ContactForm />
-    </div>
+    <main>
+      <div className="index1">
+        <div className="index1_2">
+          <Index1/>
+        </div>
+        <div>
+          <img src="/public/img/img1.png" alt="png"/>
+        </div>
+      </div>
+      <div className="index2">
+        <Index2/>
+      </div>
+    </main>
   );
 }
 

@@ -1,9 +1,21 @@
+import Direita from '../Componentes/ContactForm/Direita'
+import Esquerda from '../Componentes/ContactForm/Esquerda'
+
 const Contato = ()=>{
     return(
-        <div className="mainInfo">
-            <h1>Contato</h1>
+        <main>
+      <div className="direita">
+        <div className="direita2">
+          <Esquerda/>
         </div>
+        <div className="esquerda">
+        </div>
+        <div>
+          <Direita/>
+        </div>
+      </div>
+    </main>
     )
 }
 
-export default Contato
+export default Contato;

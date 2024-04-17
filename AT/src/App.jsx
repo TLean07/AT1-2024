@@ -1,19 +1,17 @@
-import Header from './Componentes/Header';
-import Footer from './Componentes/Footer'; 
+import Header from './Componentes/Header/index';
 import {Outlet} from 'react-router-dom';
+import './style.css'
 
 function App() {
   const menuItems = [
     { text: 'Home', link: '/' },
     { text: 'Sobre', link: '/sobre' },
-    { text: 'Serviços', link: '/servicos' },
     { text: 'Contato', link: '/contato' },
   ];
   return (
         <>
-          <Header title="Meu Site" menuItems={menuItems} />
+          <Header  menuItems={menuItems} />
           <Outlet/>
-          <Footer />
         </>
   )
 }
