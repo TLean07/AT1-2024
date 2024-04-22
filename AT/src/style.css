@@ -213,10 +213,12 @@ form button{
   position: absolute;
   right: 0px;
 }
-.logo2{
+.logo2 {
   width: 32px;
   height: 32px;
   gap: 0px;
   opacity: 0px;
-  img{border-radius: 50px;}
+}
+.logo2 img{
+  border-radius: 50px;
 }
